@@ -167,7 +167,7 @@ header {
 /* MORE LINKS SECTION */
 
 #more-links {
-  padding: 63.8px 0 0;
+  padding: 63.8px 0;
 
   background-color: #fbf6ff;
 
@@ -194,4 +194,49 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+footer h1 {
+  font-family: 'roboto';
+  color: #fff;
+  font-size: 30px;
+}
+
+#icons-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#icons-footer img {
+  width: 50px;
+  height: 50px;
+}
+
+#links-footer {
+  display: flex;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 13px;
+}
+
+#links-footer h2 {
+  border-right: 1px solid white;
+  padding: 0 20px;
+}
+
+#h2-border-none {
+  border: none !important;
 }
