@@ -18,6 +18,7 @@
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 body {
@@ -26,6 +27,10 @@ body {
   font-family: 'Roboto', sans-serif;
 
   font-size: 18px;
+
+  text-transform: none;
+
+  width: 100vw;
 }
 
 /* HEADER SECTION */
@@ -49,9 +54,30 @@ header {
   font-weight: bold;
 
   display: flex;
-  flex-basis: 348px;
+  flex-basis: 450px;
   justify-content: space-between;
   align-items: center;
+}
+
+#nav div a {
+  padding-left: 10px;
+}
+
+/* nav animations */
+
+#nav div::before {
+  position: absolute;
+
+  content: ' ';
+  width: 2px;
+  height: 0px;
+  background-color: #4fff4b;
+
+  transition: all 0.2s;
+}
+
+#nav div:hover::before {
+  height: 20px;
 }
 
 /* IMPUT SECTION */
