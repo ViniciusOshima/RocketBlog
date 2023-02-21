@@ -300,6 +300,38 @@ header {
 
 /* ANSWER BUTTOM SECTION */
 
+.answer-buttom-none {
+  position: absolute;
+  z-index: 3;
+  left: 20%;
+
+  width: 100%;
+  max-width: 1170px;
+  height: 0px;
+  margin: 0 auto;
+
+  background-color: #fbf6ff;
+
+  border-radius: 10px;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  animation-name: closePageGame;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes closePageGame {
+  from {
+    height: 400px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
 .answer-buttom {
   position: absolute;
   z-index: 3;
@@ -317,6 +349,19 @@ header {
   display: flex;
   gap: 10px;
   justify-content: center;
+
+  animation-name: answerAnimationButtom;
+  animation-duration: 0.2s;
+}
+
+@keyframes answerAnimationButtom {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 400px;
+  }
 }
 
 .answer-buttom-info {
@@ -329,7 +374,7 @@ header {
 
 .answer-buttom-info h1 {
   font-size: 50px;
-  line-height: 2;
+  line-height: 1.7;
   letter-spacing: 5px;
 
   font-family: 'Anton', sans-serif;
@@ -339,15 +384,15 @@ header {
   display: grid;
   grid-template-areas: 'li1 li2' 'li3 li4';
   grid-template-columns: 470px 470px;
-  grid-template-rows: 140px 140px;
+  grid-template-rows: 155px 155px;
 }
 
 .answer-buttom-info li {
-  margin: 20px;
+  margin: 15px;
 
   font-size: 30px;
   text-align: center;
-  line-height: 3.35;
+  line-height: 4.2;
   color: #fbf6ff;
   font-family: 'Anton', sans-serif;
   letter-spacing: 3px;
