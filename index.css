@@ -425,6 +425,34 @@ header {
   width: 90px;
 }
 
+/* ANSWER ME SECTION */
+
+#buttom-me {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.bg-buttom:hover #me {
+  height: 180px;
+  width: 180px;
+
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.icon-social-initial {
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+}
+
+.bg-buttom:hover .icon-social-initial {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+}
+
 /* LINKS SECTION */
 
 #links {
