@@ -283,7 +283,7 @@ header {
   height: 180px;
 
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
 
   transition-property: all;
@@ -317,9 +317,7 @@ header {
 }
 
 .bg-buttom:hover {
-  padding-left: 10px;
-
-  width: 400px;
+  width: 500px;
   height: 200px;
   border-radius: 10%;
 }
@@ -331,101 +329,43 @@ header {
 
 /* ANSWER BUTTOM SECTION */
 
-.answer-buttom-none {
-  position: absolute;
-  z-index: 3;
-  left: 20%;
-
-  width: 100%;
-  max-width: 1170px;
-  height: 0px;
-  margin: 0 auto;
-
-  background-color: #fbf6ff;
-
-  border-radius: 10px;
-
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-
-  animation-name: closePageGame;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes closePageGame {
-  from {
-    height: 400px;
-  }
-  to {
-    height: 0px;
-  }
-}
-
-.answer-buttom {
-  position: absolute;
-  z-index: 3;
-  left: 20%;
-
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-
-  background-color: #fbf6ff;
-
-  border-radius: 10px;
-
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-
-  animation-name: answerAnimationButtom;
-  animation-duration: 0.2s;
-}
-
-@keyframes answerAnimationButtom {
-  from {
-    height: 0px;
-  }
-
-  to {
-    height: 400px;
-  }
-}
-
 .answer-buttom-info {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  flex-basis: 914px;
+  flex-basis: 0px;
 }
 
-.answer-buttom-info h1 {
-  font-size: 50px;
-  line-height: 1.7;
-  letter-spacing: 5px;
-
-  font-family: 'Anton', sans-serif;
+.bg-buttom:hover .answer-buttom-info {
+  flex-basis: 400px;
 }
 
 .answer-buttom-info ul {
   display: grid;
   grid-template-areas: 'li1 li2' 'li3 li4';
-  grid-template-columns: 100px 100px;
-  grid-template-rows: 50px 50px;
+  grid-template-columns: 0px 0px;
+  grid-template-rows: 0px 0px;
+}
+
+.bg-buttom:hover .answer-buttom-info ul {
+  grid-template-columns: 180px 180px;
+  grid-template-rows: 80px 80px;
 }
 
 .answer-buttom-info li {
-  margin: 15px;
+  margin: 5px;
 
-  font-size: 5px;
+  font-size: 0px;
+  letter-spacing: 1px;
   text-align: center;
-  line-height: 1;
+  line-height: 1.7;
   color: #fbf6ff;
   font-family: 'Anton', sans-serif;
-  letter-spacing: 3px;
+}
+
+.bg-buttom:hover .answer-buttom-info li {
+  font-size: 17px;
 }
 
 .bg-black {
@@ -436,6 +376,12 @@ header {
     rgba(0, 0, 0, 0.6923144257703081) 100%
   );
   z-index: 3;
+
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-li-1 {
@@ -469,6 +415,14 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#img-game-bg {
+  width: 0px;
+}
+
+.bg-buttom:hover #img-game-bg {
+  width: 90px;
 }
 
 /* LINKS SECTION */
