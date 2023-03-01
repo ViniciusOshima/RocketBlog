@@ -338,7 +338,7 @@ header {
 }
 
 .bg-buttom:hover .answer-buttom-info {
-  flex-basis: 400px;
+  flex-basis: 380px;
 }
 
 .answer-buttom-info ul {
@@ -419,6 +419,7 @@ header {
 
 #img-game-bg {
   width: 0px;
+  border-radius: 10% 0 0 10%;
 }
 
 .bg-buttom:hover #img-game-bg {
@@ -451,6 +452,35 @@ header {
   width: 90px;
   height: 90px;
   padding: 10px;
+}
+
+/* ANSWER SCORE SECTION */
+
+#answer-buttom-score {
+  font-size: 0;
+  font-family: 'Anton', sans-serif;
+  color: black;
+}
+
+#answer-buttom-score div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #290742;
+}
+
+#buttom-score {
+  display: flex;
+}
+
+.bg-buttom:hover #answer-buttom-score {
+  font-size: 25px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.bg-buttom:hover #buttom-score {
 }
 
 /* LINKS SECTION */
